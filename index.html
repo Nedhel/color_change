@@ -2,25 +2,30 @@
 <html>
     <head>
         <title>Color Change</title>
+        <link rel="stylesheet" href="visual.css">
+        <script src="actions.js"></script>
     </head>
     <body>
-        <div style="display: flex; flex-direction: column; align-items: center;">
+        <div class="flex-content">
             <h1>Aplicar CSS sobre elementos</h1>            
             <pre>
                 1.- Selecciona el color
                 2.- Selecciona el elemento que deseas cambiar
                 3.- Aplica el formato pulsando el boton aplicar            
             </pre>
-            <div style="width:400px ;height: 200px; border:solid 2px">Vamos!! intentalo</div>
-            <input type="color">
-            <select name="selector" id="selector1">
-                <option value="text">Letras</option>
-                <option value="background">Fondo</option>
-                <option value="border">Borde</option>
-                <option value="shadow">Sombreado</option>
-                <option value="body">Fondo pagina</option>
-            </select>
-            <input type="button" value="Aplicar">
+            <div id="try">Vamos!! intentalo</div>
+            
+            <div class="flex-content2">
+                <input id="color" type="color">
+                <select name="selector" id="selector1" >                    
+                    <option value="text">Letras</option>
+                    <option value="background">Fondo</option>
+                    <option value="border">Borde</option>
+                    <option value="shadow">Sombreado</option>
+                    <option value="body">Fondo pagina</option>
+                </select>
+                <input type="button" value="Aplicar" id="cambios">
+            </div>
         </div>
     </body>
 </html>
